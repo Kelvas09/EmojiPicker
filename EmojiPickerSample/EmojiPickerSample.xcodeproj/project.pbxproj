@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B089F70829702B8400F0C479 /* EmojiPicker in Frameworks */ = {isa = PBXBuildFile; productRef = B089F70729702B8400F0C479 /* EmojiPicker */; };
 		B0DD3892296ED65900DEFE36 /* EmojiPickerSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DD3891296ED65900DEFE36 /* EmojiPickerSampleApp.swift */; };
 		B0DD3894296ED65900DEFE36 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DD3893296ED65900DEFE36 /* ContentView.swift */; };
 		B0DD3896296ED65B00DEFE36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0DD3895296ED65B00DEFE36 /* Assets.xcassets */; };
 		B0DD3899296ED65B00DEFE36 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0DD3898296ED65B00DEFE36 /* Preview Assets.xcassets */; };
-		B0DD38A3296ED75900DEFE36 /* EmojiPicker in Frameworks */ = {isa = PBXBuildFile; productRef = B0DD38A2296ED75900DEFE36 /* EmojiPicker */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B089F70629702B7E00F0C479 /* EmojiPicker */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = EmojiPicker; path = ..; sourceTree = "<group>"; };
 		B0DD388E296ED65900DEFE36 /* EmojiPickerSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmojiPickerSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0DD3891296ED65900DEFE36 /* EmojiPickerSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiPickerSampleApp.swift; sourceTree = "<group>"; };
 		B0DD3893296ED65900DEFE36 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B0DD3895296ED65B00DEFE36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0DD3898296ED65B00DEFE36 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		B0DD38A0296ED67600DEFE36 /* EmojiPicker */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = EmojiPicker; path = ../EmojiPicker; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,7 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0DD38A3296ED75900DEFE36 /* EmojiPicker in Frameworks */,
+				B089F70829702B8400F0C479 /* EmojiPicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +38,7 @@
 		B0DD3885296ED65900DEFE36 = {
 			isa = PBXGroup;
 			children = (
+				B089F70629702B7E00F0C479 /* EmojiPicker */,
 				B0DD389F296ED67600DEFE36 /* Packages */,
 				B0DD3890296ED65900DEFE36 /* EmojiPickerSample */,
 				B0DD388F296ED65900DEFE36 /* Products */,
@@ -75,7 +76,6 @@
 		B0DD389F296ED67600DEFE36 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				B0DD38A0296ED67600DEFE36 /* EmojiPicker */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -104,7 +104,7 @@
 			);
 			name = EmojiPickerSample;
 			packageProductDependencies = (
-				B0DD38A2296ED75900DEFE36 /* EmojiPicker */,
+				B089F70729702B8400F0C479 /* EmojiPicker */,
 			);
 			productName = EmojiPickerSample;
 			productReference = B0DD388E296ED65900DEFE36 /* EmojiPickerSample.app */;
@@ -364,7 +364,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		B0DD38A2296ED75900DEFE36 /* EmojiPicker */ = {
+		B089F70729702B8400F0C479 /* EmojiPicker */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = EmojiPicker;
 		};
