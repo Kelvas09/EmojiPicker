@@ -21,17 +21,18 @@ public struct EmojiPickerView: View {
     private var selectedColor: Color
     private var searchEnabled: Bool
 
-    public init(selectedEmoji: Binding<Emoji?>, searchEnabled: Bool = false, selectedColor: Color = .blue) {
+    public init(selectedEmoji: Binding<Emoji?>, searchEnabled: Bool = false, selectedColor: Color = .blue, emojiProvider: EmojiProvider = DefaultEmojiProvider()) {
         self._selectedEmoji = selectedEmoji
         self.selectedColor = selectedColor
         self.searchEnabled = searchEnabled
+        self.emojis = emojiProvider.getAll()
     }
 
     let columns = [
         GridItem(.adaptive(minimum: 80))
     ]
 
-    let emojis = EmojiProvider().getAll()
+    let emojis: [Emoji]
 
     private var searchResults: [Emoji] {
         if search.isEmpty {

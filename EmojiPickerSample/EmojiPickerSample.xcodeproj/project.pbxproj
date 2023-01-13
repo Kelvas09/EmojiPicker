@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B089F70829702B8400F0C479 /* EmojiPicker in Frameworks */ = {isa = PBXBuildFile; productRef = B089F70729702B8400F0C479 /* EmojiPicker */; };
+		B0B09EC6297206F9005F41E9 /* LimitedEmojiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B09EC5297206F9005F41E9 /* LimitedEmojiProvider.swift */; };
 		B0DD3892296ED65900DEFE36 /* EmojiPickerSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DD3891296ED65900DEFE36 /* EmojiPickerSampleApp.swift */; };
 		B0DD3894296ED65900DEFE36 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DD3893296ED65900DEFE36 /* ContentView.swift */; };
 		B0DD3896296ED65B00DEFE36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0DD3895296ED65B00DEFE36 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		B089F70629702B7E00F0C479 /* EmojiPicker */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = EmojiPicker; path = ..; sourceTree = "<group>"; };
+		B0B09EC5297206F9005F41E9 /* LimitedEmojiProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitedEmojiProvider.swift; sourceTree = "<group>"; };
 		B0DD388E296ED65900DEFE36 /* EmojiPickerSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmojiPickerSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0DD3891296ED65900DEFE36 /* EmojiPickerSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiPickerSampleApp.swift; sourceTree = "<group>"; };
 		B0DD3893296ED65900DEFE36 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				B0DD3893296ED65900DEFE36 /* ContentView.swift */,
 				B0DD3895296ED65B00DEFE36 /* Assets.xcassets */,
 				B0DD3897296ED65B00DEFE36 /* Preview Content */,
+				B0B09EC5297206F9005F41E9 /* LimitedEmojiProvider.swift */,
 			);
 			path = EmojiPickerSample;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0B09EC6297206F9005F41E9 /* LimitedEmojiProvider.swift in Sources */,
 				B0DD3894296ED65900DEFE36 /* ContentView.swift in Sources */,
 				B0DD3892296ED65900DEFE36 /* EmojiPickerSampleApp.swift in Sources */,
 			);

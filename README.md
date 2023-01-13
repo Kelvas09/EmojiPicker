@@ -109,6 +109,48 @@ By default the search for emoji is allowed in the picker, it is however possible
 EmojiPickerView(selectedEmoji: $selectedEmoji, searchEnabled: false)
 ```
 
+⚠️ **WARNING** Search is only possible when `EmojiPicker` is embed on `NavigationView`.
+
+### Custom emoji provider
+
+`EmojiPickerView` embeds `EmojiProvider` protocol with a default implementation: `DefaultEmojiProvider`. This class allows to retrieve all existing emojis. 
+
+When you build an `EmojiPickerView`, by default it uses this class to get the list of emojis to display.
+
+If you want to use your own emoji list, you can create your own class by implementing the `EmojiProvider` protocol :
+
+```swift
+import Foundation
+import EmojiPicker
+
+final class LimitedEmojiProvider: EmojiProvider {
+
+    func getAll() -> [Emoji] {
+        return [
+            Emoji(value: "🚀", name: "rocket"),
+            Emoji(value: "🇫🇷", name: "France"),
+            Emoji(value: "🦄", name: "unicorn"),
+            Emoji(value: "🍺", name: "beer"),
+            Emoji(value: "💶", name: "euro")
+        ]
+    }
+
+}
+```
+
+And then use it in the creation of the view:
+
+```swift
+...
+NavigationView {
+    EmojiPickerView(selectedEmoji: $selectedEmoji, selectedColor: .orange, emojiProvider: LimitedEmojiProvider())
+        .padding(.top, 32)
+        .navigationTitle("Emojis")
+        .navigationBarTitleDisplayMode(.inline)
+}
+...
+```
+
 ## Samples
 
 You can access to sample project on folder `EmojiPickerSample`
